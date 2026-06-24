@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para você ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:linear-gradient(135deg,#ff4d6d,#ff8fab);
+    font-family:Arial,sans-serif;
+    color:white;
+    text-align:center;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+#surpresa{
+    display:none;
+}
+
+.beijo{
+    font-size:120px;
+    animation:pulsar 1s infinite;
+}
+
+@keyframes pulsar{
+    50%{transform:scale(1.2);}
+}
+</style>
+</head>
+
+<body>
+
+<div id="inicio">
+    <h1>Oi, amor ❤️</h1>
+    <p>Tenho uma pergunta para você...</p>
+    <button onclick="mostrar()">Clique aqui</button>
+</div>
+
+<div id="surpresa">
+    <div class="beijo">💋</div>
+    <h1>Posso ganhar um beijo seu? 😘</h1>
+</div>
+
+<script>
+function mostrar(){
+    document.getElementById("inicio").style.display="none";
+    document.getElementById("surpresa").style.display="block";
+}
+</script>
+
+</body>
+</html>
